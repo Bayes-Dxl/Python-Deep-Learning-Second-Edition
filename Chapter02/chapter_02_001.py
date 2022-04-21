@@ -11,7 +11,7 @@ weight_value = 1000
 bias_value_1 = 5000
 
 # modify to change where the step function ends
-bias_value_2 = -5000+
+bias_value_2 = -5000
 
 # plot the
 plt.axis([-10, 10, -1, 10])

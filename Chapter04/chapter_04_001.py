@@ -44,9 +44,14 @@ from PIL import Image
 from io import BytesIO
 
 # load the image
-url = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Commander_Eileen_Collins_-_GPN-2000-001177.jpg/382px-Commander_Eileen_Collins_-_GPN-2000-001177.jpg?download"
-resp = requests.get(url)
-image_rgb = np.asarray(Image.open(BytesIO(resp.content)).convert("RGB"))
+# url = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Commander_Eileen_Collins_-_GPN-2000-001177.jpg/382px-Commander_Eileen_Collins_-_GPN-2000-001177.jpg?download"
+# url = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Commander_Eileen_Collins_-_GPN-2000-001177.jpg/382px-Commander_Eileen_Collins_-_GPN-2000-001177.jpg?download"
+#
+#
+#
+# resp = requests.get(url)
+# 标记！！！
+image_rgb = np.asarray(Image.open("GPN.jpg").convert("RGB"))
 
 # convert to grayscale
 image_grayscale = np.mean(image_rgb, axis=2, dtype=np.uint)
