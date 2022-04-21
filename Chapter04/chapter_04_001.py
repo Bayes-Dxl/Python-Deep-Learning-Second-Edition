@@ -50,7 +50,10 @@ from io import BytesIO
 #
 #
 # resp = requests.get(url)
-# 标记！！！
+# 标记！！！# 标记！！！
+# 标记！！！# 标记！！！
+# 标记！！！# 标记！！！
+
 image_rgb = np.asarray(Image.open("GPN.jpg").convert("RGB"))
 
 # convert to grayscale
